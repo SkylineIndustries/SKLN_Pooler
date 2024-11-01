@@ -13,7 +13,7 @@ public class Gun : MonoBehaviour
         if (Input.GetButtonDown("Fire1"))
         {
             GameObject bullet = PoolManager.Instance.SpawnFromPool(bulletTag, firePoint.position, firePoint.rotation);
-            bullet.GetComponent<Rigidbody>().velocity = firePoint.forward * 10;
+            bullet.GetComponent<Rigidbody>().linearVelocity = firePoint.forward * 10;
         }
     }
 }

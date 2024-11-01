@@ -57,8 +57,6 @@ namespace SKLN_Pooler.PoolableObject
             {
                 Logger.LogWarning("Pool error", $"Pool with tag {poolTag} does not exist.");
             }
-            
-            yield break;
         }
 
         private void OnDisable()
@@ -85,7 +83,7 @@ namespace SKLN_Pooler.PoolableObject
         {
             if (DespawnMode.OnCollision == despawnMode && tags.Contains(collision.gameObject.tag) && collision.relativeVelocity.magnitude > collisionThreshold)
             {
-             ReturnToPool();   
+             StartCoroutine(ReturnToPool());   
             }
         }
     }

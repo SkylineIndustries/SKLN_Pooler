@@ -1,4 +1,8 @@
 # SKLN Pool Manager
+![GitHub](https://img.shields.io/github/license/SkylineIndustries/SKLN_Pooler)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/SkylineIndustries/SKLN_Pooler)
+![GitHub Release Date](https://img.shields.io/badge/Unity%20Version-2020.3.0f1-blue)
+![GitHub Release Date](https://img.shields.io/badge/CSHARP%20Version-9.0-blue)
 
 **SKLN Pool Manager** is a lightweight and flexible object pooling system designed for Unity. It allows developers to efficiently manage and reuse objects in their game, reducing the need for constant instantiation and destruction of GameObjects, which can improve performance significantly, especially in resource-intensive games.
 

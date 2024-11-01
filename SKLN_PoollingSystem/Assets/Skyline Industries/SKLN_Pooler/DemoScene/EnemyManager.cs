@@ -18,7 +18,7 @@ public class EnemyManager : MonoBehaviour
         {
             yield return new WaitForSeconds(5);
             GameObject enemy = PoolManager.Instance.SpawnFromPool(enemyTag, new Vector3(Random.Range(-5, 5), 1, Random.Range(-5, 5)), Quaternion.identity);
-            enemy.GetComponent<Rigidbody>().velocity = new Vector3(Random.Range(-1, 1), 0, Random.Range(-1, 1)) * 2;
+            enemy.GetComponent<Rigidbody>().linearVelocity = new Vector3(Random.Range(-1, 1), 0, Random.Range(-1, 1)) * 2;
         }
     }
     
